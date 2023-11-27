@@ -1,0 +1,240 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="img/top.png" type="image/x-icon" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <!-- <script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          $("#check").click(function () {
+            $("ul").toggleClass("show");
+          });
+        });
+      </script> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <!-- <link rel="stylesheet" href="styles.css" /> -->
+      <title>Mavrick Resort</title>
+    </head>
+    <title>Mavrick Resort</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      background-color: #86c5f2;
+      height: 20vh;
+      color: white;
+    }
+
+    body {
+      background-color: #0a588e;
+    }
+
+    nav ul {
+      float: right;
+      margin-top: -10vh;
+      margin-right: 20px;
+
+      text-transform: uppercase;
+      justify-content: center;
+    }
+    nav ul li {
+      display: inline-block;
+      line-height: 70px;
+      margin: 0 2px;
+    }
+
+    nav ul li a {
+      font-size: 20px;
+    }
+
+    label img {
+      width: 200px;
+    }
+    .nav-item dropdown .dropdown-menu .dropdown-item {
+      background-color: #0a588e;
+      color: white;
+    }
+  </style>
+
+  <header>
+    <nav>
+      <label>
+        <img src="img/MAVRICK (1).png" alt="Mavrick Logo" />
+        <ul>
+          <li><a href="index.html"></a>Home</li>
+          <li>About</li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              >RATES
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" class="dropdown-item">Weekends</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Weekdays</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Overnight</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">Day Tour</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>Amenities</li>
+          <li>Reviews</li>
+          <li>Contact</li>
+          <li>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#book_now"
+            >
+              Book Now
+            </button>
+            <div class="modal fade" id="book_now" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modal-title"><strong>Book Now</strong></p>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form>
+                          <div class="row">
+                            <div class="input-group">
+                              <span
+                                class="input-group-text"
+                                style="color: #0a588e"
+                                >First Name:
+                              </span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="first-name"
+                              />
+                              <span
+                                class="input-group-text"
+                                style="color: #0a588e"
+                                >Last Name:</span
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="last-name"
+                              />
+                            </div>
+                          </div>
+                          <div class="input-group">
+                            <span class="input-group-text" style="color: #0a588e"
+                              >+63</span
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="phone_num"
+                            />
+                          </div>
+                          <div class="row">
+                            <div class="form-floating">
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="email"
+                              />
+                              <label for="email" style="color: #0a588e"
+                                >Email address</label
+                              >
+                            </div>
+                          </div>
+  
+                          <div class="row">
+                            <div class="form-floating">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="text"
+                                placeholder="Number of Pax"
+                              />
+                              <label for="text" style="color: #0a588e"
+                                >Number of Pax</label
+                              >
+                            </div>
+                          </div>
+  
+                          <label>Check-In</label>
+                          <input
+                            type="date"
+                            name="check_in_date"
+                            id="check_in_date"
+                          />
+                          Check-Out
+                          <input
+                            type="date"
+                            name="check_out_date"
+                            id="check_out_date"
+                          />
+                          <br />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button class="btn btn-primary">Confirm Pencil Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <body></body>
+</html>
